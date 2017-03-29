@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>js exp</title>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+   var e = document.getElementById("go");
+  
+   e.addEventListener("click", function() {
+        
+        document.location.reload(true); 
+    
+  }, false);
+
+  document.getElementById("timestamp").innerText = new Date().getTime();  
+  
+});
+</script>
+
+
+<form name="myForm" action="{action page}">
+  <input name="go" id="go" type="button" value="Refresh">
+</form>
+<p><span id="timestamp"></span> milliseconds since midnight, January 1, 1980.</p>
+</head>
+<body>
+
+</body>
+</html>
